@@ -1,0 +1,47 @@
+.searchBar {
+    display: flex;
+    border: 2px solid red;
+    height: 50px;
+}
+
+.searchBarLeft {
+    border: 1px solid blue;
+    width: 30%;
+}
+
+.instaIcon {
+    border: 1px solid purple;
+    margin: 0% 10% 4% 0%;
+}
+
+.instaCursive {
+    /* border: 1px solid pink; */
+    justify-content: flex-start;
+    width: 40%;
+
+}
+
+.searchBarMiddle {
+    margin: 1.5% 0% 0% 13%;
+    width: 20%;
+
+}
+
+.searchBarRight {
+    border: 1px solid green;
+    width: 30%;
+}
+
+.navIcons {
+   margin: 3.5% 3% 0% 3%;
+}
+
+
+
+
+
+
+
+
+
+

@@ -4,15 +4,15 @@ import { Form, FormGroup, Input } from 'reactstrap';
 import * as Icon from 'react-feather';
 
 const SearchBar = props => {
-  return (
-    <div className='searchBar'>
-      <div className='seachBarLeft'>
-        <Icon.Instagram className='instaIcon' />
+   return (
+     <div className='searchBar'>
+       <div className='searchBarLeft'>
+         <Icon.Instagram className='instaIcon' />
         <img className='instaCursive'
           src='https://fontmeme.com/images/instagram-new-logo.png'
           alt='Instagram Cursive' />
       </div>
-      <Form>
+      <Form className='searchBarMiddle'>
         <FormGroup>
         <Input 
           type='search'
@@ -25,9 +25,9 @@ const SearchBar = props => {
         <Icon.Compass className='navIcons' />
         <Icon.Heart className='navIcons' />
         <Icon.User className='navIcons' />
-      </div>
-    </div>
-  )
-}
+      </div> 
+     </div> 
+   )
+} 
 
-export default SearchBar;
+ export default SearchBar;
