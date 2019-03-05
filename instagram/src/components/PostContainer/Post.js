@@ -6,7 +6,7 @@ const Post = props => {
   return (
     <div className='post'>
       <div className='opUserInfo'>
-        <img src={props.post.thumbnailUrl} alt='Avatar' />
+        <img src={props.post.thumbnailUrl} alt='Avatar' className='avatar' />
         <h3>{props.post.username}</h3>
       </div>
       <img src={props.post.imageUrl} alt='Original Post'/>

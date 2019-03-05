@@ -1,0 +1,31 @@
+.postContainer {
+  border: 5px solid orange;
+  margin: 2%;
+  display: flex;
+}
+
+.post {
+    border: 3px solid gray;
+}
+
+.opUserInfo {
+    border: 2px dotted red;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    justify-content: flex-start;
+}
+
+.avatar {
+     border-radius: 50%;
+     height: auto;
+     padding: 1%;
+     width: 65px;
+     height: 60px;
+     padding-right: 1%;
+     margin-left: 20%;
+}
+
+h3 {
+padding: 1.25% 1% 1.25% 1%;
+}
