@@ -1,8 +1,8 @@
 .commentSection {
     border: 4px solid yellowgreen;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    
 }
 /*  */
 .likeAndComment {
