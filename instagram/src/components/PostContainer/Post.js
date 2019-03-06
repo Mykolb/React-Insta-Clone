@@ -14,6 +14,7 @@ const Post = props => {
         comments={props.post.comments}
         likes={props.post.likes}
       />
+      <div className='comment-time'>{props.post.timestamp}</div>
     </div>
   )
 }

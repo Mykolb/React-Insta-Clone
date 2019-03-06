@@ -30,4 +30,23 @@ const SearchBar = props => {
    )
 } 
 
- export default SearchBar;
+
+// SearchBar.propTypes = {
+//   searchbar: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       username: PropTypes.string.isRequired,
+//     })
+//   ),
+
+
+
+
+//   SearchBar.defaultProps = {
+//     searchbar: []
+//   }
+// }
+
+
+
+
+export default SearchBar;

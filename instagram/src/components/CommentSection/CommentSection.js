@@ -9,7 +9,8 @@ class CommentSection extends React.Component {
     this.state = {
       comments: props.comments,
       likes: props.likes,
-      comment: ''
+      comment: '',
+      timestamp: props.timestamp
     }
 
   }
@@ -59,7 +60,12 @@ class CommentSection extends React.Component {
           </div>
         )
       })}
-      <Form className='form' onSubmit={this.addNewComment}>
+        
+        <div className='time'>
+        <p className='timestamp'>{this.state.timestamp}</p>
+        </div>
+        
+      <Form className='comment-form' onSubmit={this.addNewComment}>
         <Input 
           name='comment'
           placeholder='Add a comment...'
@@ -68,9 +74,10 @@ class CommentSection extends React.Component {
           value={this.state.comment}
         />
       </Form>
-    </div>
+      
+      </div>
   )
-}
+  }
 }
 
 export default CommentSection;
