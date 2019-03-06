@@ -7,13 +7,14 @@
     position: fixed;
     background-color: white;
     margin-top: 0px;
+    width: 100%;
   /*make fixed nav later*/
 }
 
 .searchBarLeft {
     /* border: 1px solid blue; */
     width: 30%;
-    margin-top: 0px;
+    margin-top: 1.5%;
 }
 
 .instaIcon {
@@ -34,7 +35,7 @@
 }
 
 .searchBarMiddle {
-    margin: 0% 10% 0% 12%;
+    margin: 2% 10% 0% 12%;
     width: 20%;
 
 }
@@ -43,7 +44,7 @@
 .searchBarRight {
     /* border: 1px solid green; */
     width: 30%;
-    margin-top: 0px;
+    margin-top: 1.5%;
 }
 
 .navIcons {

@@ -1,6 +1,5 @@
 .postContainer {
   /* border: 5px solid orange; */
-  margin: 2%;
   display: flex;
   max-width: 100%;
   justify-content: center;
@@ -18,6 +17,7 @@
     justify-content: center;
     height: 75px;
     justify-content: flex-start;
+    margin-top: 5%;
 }
 
 .avatar {

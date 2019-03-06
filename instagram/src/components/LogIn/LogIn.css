@@ -39,3 +39,7 @@ p {
     text-align: center;
 }
 
+p:hover {
+    color: #38A1F3;
+}
+

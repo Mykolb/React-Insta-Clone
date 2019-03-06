@@ -47,7 +47,7 @@ handleLogInSubmit = e => {
             <FormGroup className='login-form1'>
                 <Input
                 type='password'
-                placeholder='Type pwd here'
+                placeholder='Password'
                 name='password'
                 value={this.state.password}
                 onChange={this.handleInputChange}
