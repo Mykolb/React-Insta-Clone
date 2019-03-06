@@ -7,7 +7,7 @@ const Post = props => {
     <div className='post'>
       <div className='opUserInfo'>
         <img src={props.post.thumbnailUrl} alt='Avatar' className='avatar' />
-        <h3>{props.post.username}</h3>
+        <h3 className='post-header'>{props.post.username}</h3>
       </div>
       <img src={props.post.imageUrl} alt='Original Post'/>
       <CommentSection 

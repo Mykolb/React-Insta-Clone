@@ -48,18 +48,18 @@ class CommentSection extends React.Component {
         <Icon.Heart 
           className='icons'
           onClick={this.increaseLikes} />
-        <Icon.MessageCircle className='icon' />
+        <Icon.MessageCircle className='icons' />
       </div>
-      <p>{this.state.likes} likes</p>
+      <p className='likes'>{this.state.likes} likes</p>
       {this.state.comments.map((comment, i) => {
         return (
           <div className='comment' key={i}>
-            <h3>{comment.username}</h3>
-            <p>{comment.text}</p>
+            <h3 className='comment-header'>{comment.username}</h3>
+            <p className='comment-p'>{comment.text}</p>
           </div>
         )
       })}
-      <Form onSubmit={this.addNewComment}>
+      <Form className='form' onSubmit={this.addNewComment}>
         <Input 
           name='comment'
           placeholder='Add a comment...'
