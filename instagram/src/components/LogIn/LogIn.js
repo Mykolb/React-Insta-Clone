@@ -27,11 +27,15 @@ handleLogInSubmit = e => {
     render() { 
         return (  
             <Form className='login-form'>
-            <h1>Sign In To Insta-Clone</h1>
+            <img className='login-instaCursive'
+            src='https://fontmeme.com/images/instagram-new-logo.png'
+            alt='Instagram Cursive' />
             <div>
-                LogIn Here
+            <button className='login-btn' color='success' size='large' onClick={this.handleLogInSubmit}>
+                Log In
+                </button>
             </div>
-            <FormGroup>
+            <FormGroup className='login-form1'>
                 <Input
                 type='text'
                 placeholder='UserName'
@@ -40,7 +44,7 @@ handleLogInSubmit = e => {
                 onChange={this.handleInputChange}
                 />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className='login-form1'>
                 <Input
                 type='password'
                 placeholder='Type pwd here'
@@ -49,9 +53,7 @@ handleLogInSubmit = e => {
                 onChange={this.handleInputChange}
                 />
                 <br />
-                <button color='success' size='large' onClick={this.handleLogInSubmit}>
-                Log In
-                </button>
+                <p>Have an account? Log in</p>
             </FormGroup>
             </Form>
 

@@ -37,6 +37,7 @@
 
 .comment {
     /* border: 1px solid indigo; */
+    justify-content: center;
     width: 58%;
     margin: 0% 0% 0% 21%;
     height: auto;
@@ -51,5 +52,6 @@
   /* border: 5px solid blue;   */
   margin-left: 21%;
   width: 58%;
+  justify-content: center;
 }
 

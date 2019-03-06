@@ -51,6 +51,7 @@ class CommentSection extends React.Component {
           onClick={this.increaseLikes} />
         <Icon.MessageCircle className='icons' />
       </div>
+      <br />
       <p className='likes'>{this.state.likes} likes</p>
       {this.state.comments.map((comment, i) => {
         return (
