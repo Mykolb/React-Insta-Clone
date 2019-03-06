@@ -1,17 +1,17 @@
 .postContainer {
-  border: 5px solid orange;
+  /* border: 5px solid orange; */
   margin: 2%;
   display: flex;
   max-width: 100%;
 }
 
 .post {
-    border: 3px solid gray; 
+    /* border: 3px solid gray;  */
     margin: 0% 0% 0% 0%;
 }
 
 .opUserInfo {
-    border: 2px dotted red;
+    /* border: 2px dotted red; */
     display: flex;
     justify-content: center;
     height: 75px;

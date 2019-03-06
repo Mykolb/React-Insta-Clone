@@ -1,7 +1,11 @@
+
+html,body,header{margin: 0}
+
 .searchBar {
     display: flex;
-    border: 1px solid gray;
-    height: 55px; 
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    background-color: white;
   /*make fixed nav later*/
 }
 
