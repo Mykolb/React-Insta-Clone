@@ -7,12 +7,6 @@ import SearchBar from '../SearchBar/SearchBar';
 
 
 
-
-
-
-
-
-
 const ProfileContainer = props => {
             { 
         return (  
