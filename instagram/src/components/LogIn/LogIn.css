@@ -36,25 +36,17 @@
         color: #4267b2;
     }
 
-.p-or {
-    padding-top: 1%;
-    border: 0px solid #000;
-}
-
-
-    .login-btn {
-        margin: 4% 1% 1.5% 10%;
-        width: 80%;
+.signin-btn {
+        margin: 4% 1% 1.5% 0%;
+        width: 100%;
         border-radius: 5px;
         background-color: #38A1F3;;
         color: white;
     }
-        .login-btn:hover {
+        .signin-btn:hover {
             background-color: white;
             color: #38A1F3; 
         }
-
-
 
 .login-form1 {
     width: 80%;

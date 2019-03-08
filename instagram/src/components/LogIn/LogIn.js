@@ -3,6 +3,7 @@ import {Button, Form, FormGroup, Input, Foot} from 'reactstrap';
 import './LogIn.css';
 import Phones from '../LogIn/phones.png';
 import * as Icon from 'react-feather';
+import PropTypes from 'prop-types';
 
 
 
@@ -32,7 +33,7 @@ handleLogInSubmit = e => {
 
 
 
-//can create a ogout button folowing the same function above just change to removeItem//
+//can create a logout button folowing the same function above just change to removeItem//
 
 
     render() { 
@@ -51,8 +52,8 @@ handleLogInSubmit = e => {
             src='https://fontmeme.com/images/instagram-new-logo.png'
             alt='Instagram Cursive' />
             <div>
-                <p>Sign up to see photos and videos from your friends.</p>
-            <button className='facebook-btn' color='success' size='large' onClick={this.handleLogInSubmit}>
+                <p>Sign up to see photos and videos from imaginary friends.</p>
+            <button className='facebook-btn'>
                 Log in with Facebook
                 </button>
             </div>
@@ -101,7 +102,7 @@ handleLogInSubmit = e => {
                 onChange={this.handleInputChange}
                 />
                 {/* <br /> */}
-                <button className='login-btn' color='success' size='large' onClick={this.handleLogInSubmit}> 
+                <button className='signin-btn' color='success' size='large' onClick={this.handleLogInSubmit}> 
                 Sign In 
                 </button>
                 <p>By signing up, you agree to our Terms, Data Policy, and Cookies Policy.</p>
@@ -126,6 +127,16 @@ handleLogInSubmit = e => {
 }
  
 
+
+
+LogIn.propTypes = {
+    LogIn: PropTypes.shape({
+        password: PropTypes.string.isRequired,
+        email: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        username: PropTypes.string.isRequired
+    })
+}
 
 export default LogIn;
 

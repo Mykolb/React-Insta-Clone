@@ -2,6 +2,7 @@ import React from 'react';
 import './CommentSection.css';
 import * as Icon from 'react-feather';
 import { Form, Input } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -80,5 +81,15 @@ class CommentSection extends React.Component {
   )
   }
 }
+
+CommentSection.propTypes = {
+  CommentSection: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    likes: PropTypes.number.isRequired
+  })
+}
+
+
 
 export default CommentSection;
