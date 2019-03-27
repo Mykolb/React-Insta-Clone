@@ -1,9 +1,20 @@
 import React, {Component} from 'react';
-import {Button, Form, FormGroup, Input, Foot} from 'reactstrap';
-import './LogIn.css';
 import Phones from '../LogIn/phones.png';
+import Footer from '../Footer/Footer';
+//css imports
+import './LogIn.css';
+import '../Footer/Footer.css';
+import {Button, Form, FormGroup, Input, Foot} from 'reactstrap';
+//installed imports
 import * as Icon from 'react-feather';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+
+
+
+
+
 
 
 
@@ -31,7 +42,11 @@ handleLogInSubmit = e => {
     window.location.reload()
 }
 
-
+handleLogOutSubmit = e => {
+    const user = this.state.username;
+    localStorage.removeItem('user', user)
+    window.location.reload()
+}
 
 //can create a logout button folowing the same function above just change to removeItem//
 
@@ -53,9 +68,9 @@ handleLogInSubmit = e => {
             alt='Instagram Cursive' />
             <div>
                 <p>Sign up to see photos and videos from imaginary friends.</p>
-            <button className='facebook-btn'>
+            <FacebookButton>
                 Log in with Facebook
-                </button>
+                </FacebookButton>
             </div>
 
             {/* <div>
@@ -108,26 +123,31 @@ handleLogInSubmit = e => {
                 <p>By signing up, you agree to our Terms, Data Policy, and Cookies Policy.</p>
                 </FormGroup>
                 </Form>
-                {/* <div className='footer'>
-                 <h3 className='login-h3'>ABOUT US</h3>
-                 <h3 className='login-h3'>SUPPORT</h3>
-                 <h3 className='login-h3'>PRESS</h3>
-                 <h3 className='login-h3'>API</h3>
-                 <h3 className='login-h3'>JOBS</h3>
-                 <h3 className='login-h3'>PRIVACY</h3>
-                 <h3 className='login-h3'>TERMS</h3>
-                 <h3 className='login-h3' >DIRECTORY</h3>
-                 <h3 className='login-h3'>PROFILES</h3>
-                 <h3 className='login-h3' >HASHTAGS</h3>
-                 <h3 className='login-h3'>LANGUAGE</h3>
-                </div> */}
                  </div>
         );
     }
 }
  
+    
+
+//STYLED COMPONENTS- will give const error if inside a class//
+
+const FacebookButton = styled.button`
+    margin: 4% 1% 1.5% 10%;
+    width: 80%;
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: white;
+
+    ${FacebookButton}:hover & {
+        fill: white;
+    }
+    `;
 
 
+
+
+    //PROPTYPES//
 
 LogIn.propTypes = {
     LogIn: PropTypes.shape({
@@ -137,6 +157,7 @@ LogIn.propTypes = {
         username: PropTypes.string.isRequired
     })
 }
+
 
 export default LogIn;
 

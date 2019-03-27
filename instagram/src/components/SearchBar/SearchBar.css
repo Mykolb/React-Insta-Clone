@@ -8,6 +8,8 @@
     background-color: white;
     margin-top: 0px;
     width: 100%;
+    overflow: hidden;
+    z-index:1;
   /*make fixed nav later*/
 }
 
