@@ -5,7 +5,7 @@
 }
 /*  */
 .likeAndComment {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: 23%;
     height: 25px;
 }
@@ -27,11 +27,17 @@
 }
 
 .icons {
-    padding-right: 10%;
+    position: relative;
+    right: 200%;
+
 }
 
 .likes {
     font-size: .75rem;
+    position: relative;
+    top: 35px;
+    right: 26%;
+
     
 }
 

@@ -2,7 +2,7 @@
   /* border: 5px solid orange; */
   /* /* display: flex; */
   max-width: 100%;
-  margin-bottom: 30px;
+
   /* justify-content: center;
   align-items: center; */
 }
@@ -21,9 +21,11 @@
         margin-top: 5%; } */
     
 .opUserInfo {
-    margin-top: 20%;
+    margin: 4% 10%;
     align-items: center;
     justify-content: center;
+    position: relative;
+    left: 50%;
 }
 
 .column {
@@ -40,12 +42,20 @@
      /* padding: 1%; */
      width: 50px;
      height: 50px;
+     position: relative;
+     right: 200px;
+     top: 30%;
      /* margin-left: 25%; */
      margin-top: 1%;
+     display: flex;
+     justify-content: flex-start;
 } 
 
 .post-header {
     /* padding: 2.5% 0% 1% 0%; */
     font-size: 1rem;
     text-align: left;
+    position: relative;
+    right: 130px;
+    bottom: 10px;
 } 
