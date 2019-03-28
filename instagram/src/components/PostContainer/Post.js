@@ -35,11 +35,11 @@ const Post = props => {
     <Col md='6' className='column'>
     {/* <div className='post'> */}
       <Card className='opUserInfo'>
-      <CardHeader>
+      <CardHeader className='card-header'>
        <img src={props.post.thumbnailUrl} alt='Avatar' className='avatar' /> 
         <CardTitle className='post-header'>{props.post.username}</CardTitle>
         </CardHeader>
-         <CardBody>
+         <CardBody className='card-body'>
       <CardImg src={props.post.imageUrl} alt='Original Post' />
       <CommentSection 
         comments={props.post.comments}
