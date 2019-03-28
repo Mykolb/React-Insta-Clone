@@ -1,7 +1,7 @@
 import React from 'react';
 import './CommentSection.css';
 import * as Icon from 'react-feather';
-import { Form, Input } from 'reactstrap';
+import { Form, Input, CardFooter } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 class CommentSection extends React.Component {
@@ -66,7 +66,7 @@ class CommentSection extends React.Component {
         <div className='time'>
         <p className='timestamp'>{this.state.timestamp}</p>
         </div>
-        
+        <CardFooter className='card-footer'>
       <Form className='comment-form' onSubmit={this.addNewComment}>
         <Input 
           name='comment'
@@ -76,7 +76,7 @@ class CommentSection extends React.Component {
           value={this.state.comment}
         />
       </Form>
-      
+      </CardFooter>
       </div>
   )
   }
