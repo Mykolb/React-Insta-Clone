@@ -1,7 +1,8 @@
 import React from 'react';
 import CommentSection from '../CommentSection/CommentSection';
-import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Col} from 'reactstrap';
+import {Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, CardHeader, Col} from 'reactstrap';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 // const Post = props => {
 //   return (
@@ -34,12 +35,12 @@ const Post = props => {
     <Col md='6' className='column'>
     {/* <div className='post'> */}
       <Card className='opUserInfo'>
-      <CardBody>
+      <CardHeader>
        <img src={props.post.thumbnailUrl} alt='Avatar' className='avatar' /> 
         <CardTitle className='post-header'>{props.post.username}</CardTitle>
-        </CardBody>
+        </CardHeader>
          <CardBody>
-      <CardImg src={props.post.imageUrl} alt='Original Post'/>
+      <CardImg src={props.post.imageUrl} alt='Original Post' />
       <CommentSection 
         comments={props.post.comments}
         likes={props.post.likes}
@@ -69,7 +70,7 @@ Post.propTypes = {
 
 
 
-
-
-
 export default Post;
+
+
+//styled components//

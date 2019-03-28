@@ -1,20 +1,12 @@
 import React, {Component} from 'react';
 import Phones from '../LogIn/phones.png';
-import Footer from '../Footer/Footer';
 //css imports
 import './LogIn.css';
-import '../Footer/Footer.css';
-import {Button, Form, FormGroup, Input, Foot} from 'reactstrap';
+import {Button, Form, FormGroup, Input} from 'reactstrap';
 //installed imports
 import * as Icon from 'react-feather';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-
-
-
-
-
-
 
 
 
@@ -131,6 +123,8 @@ handleLogOutSubmit = e => {
     
 
 //STYLED COMPONENTS- will give const error if inside a class//
+
+
 
 const FacebookButton = styled.button`
     margin: 4% 1% 1.5% 10%;

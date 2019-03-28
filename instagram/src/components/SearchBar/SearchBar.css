@@ -1,7 +1,7 @@
 
 
 
-.searchBar {
+/* .searchBar {
     display: flex;
     border-bottom: 1px solid lightgray;
     position: fixed;
@@ -9,15 +9,15 @@
     margin-top: 0px;
     width: 100%;
     overflow: hidden;
-    z-index:1;
-  /*make fixed nav later*/
-}
+    z-index:1; */
+  /* make fixed nav later
+} */
 
-.searchBarLeft {
+/* .searchBarLeft { */
     /* border: 1px solid blue; */
-    width: 30%;
+    /* width: 30%;
     margin-top: 1.5%;
-}
+} */
 
 .instaIcon {
     /* border: 1px solid purple; */
@@ -43,11 +43,11 @@
 }
 
 
-.searchBarRight {
+/* .searchBarRight { */
     /* border: 1px solid green; */
-    width: 30%;
+    /* width: 30%;
     margin-top: 1.5%;
-}
+} */
 
 .navIcons {
    margin: 3.5% 3% 0% 5%;
