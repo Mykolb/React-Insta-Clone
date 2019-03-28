@@ -1,0 +1,64 @@
+
+
+
+/* .searchBar {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    background-color: white;
+    margin-top: 0px;
+    width: 100%;
+    overflow: hidden;
+    z-index:1; */
+  /* make fixed nav later
+} */
+
+/* .searchBarLeft { */
+    /* border: 1px solid blue; */
+    /* width: 30%;
+    margin-top: 1.5%;
+} */
+
+.instaIcon {
+    /* border: 1px solid purple; */
+    margin: 0% 10% 3% 0%;
+    border-right-color: black;
+    border-right-style:  solid;
+    border-right-width: 1px;
+  
+}
+
+.instaCursive {
+    /* border: 1px solid pink; */
+    justify-content: flex-start;
+    width: 40%;
+    margin-bottom: 2%;
+
+}
+
+.searchBarMiddle {
+    margin: 2% 10% 0% 12%;
+    width: 20%;
+
+}
+
+
+/* .searchBarRight { */
+    /* border: 1px solid green; */
+    /* width: 30%;
+    margin-top: 1.5%;
+} */
+
+.navIcons {
+   margin: 3.5% 3% 0% 5%;
+}
+
+
+
+
+
+
+
+
+
+
